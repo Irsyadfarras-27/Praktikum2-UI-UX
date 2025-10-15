@@ -1,0 +1,88 @@
+<style>.generate-button { display: inline-block;
+text-decoration: none; padding: 10px 20px; font-weight: bold;border-radius: 3px;
+background-color: darkgreen;
+color: white; 
+box-shadow: 1px 1px 1px #000; cursor: pointer;}
+</style>
+</head>
+<body>
+<form action="" method="POST">
+<table class="nav-table" border="0">
+<tbody>
+<tr>
+<th><a href="#">Home</a></th>
+<th><a href="#">Generate Link</a></th>
+<th><a href="#">History</a></th>
+<th><a href="#">Policy</a></th>
+<th><a href="#">Login</a></th>
+</tr>
+</tbody>
+</table>
+<table class="main-form-table" border="0"><tbody>
+<tr>
+<td><label for="picture_upload">Upload Picture:</label></td>
+<td>
+<div style="width: 250px; height: 100px; border: 2px solid #ccc; margin-bottom: 5px;"></div>
+<input type="file" id="picture_upload" name="picture_upload">
+</td>
+</tr>
+<tr>
+<td><label for="product_title">Product Title:</label></td>
+<td><input type="text" id="product_title" name="product_title"></td>
+</tr>
+<tr>
+<td><label for="description">Description:</label></td>
+<td><textarea id="description" name="description" rows="4"></textarea></td>
+</tr>
+<tr>
+<td><label for="account_number">Account Number:</label></td>
+<td><input type="number" id="account_number" name="account_number"></td></tr>
+<tr>
+<td><label for="bank_select">Bank:</label></td>
+<td>
+<select id="bank_select" name="bank_name">
+  <option value="">-- Pilih bang mu --</option> 
+<option value="bca">BCA</option>
+<option value="bni">BNI</option>
+<option value="bri">BRI</option>
+</select>
+</td></tr>
+<tr>
+<td><label for="account_holder">Account Holder:</label></td>
+<td><input type="text" id="account_holder" name="account_holder"></td>
+</tr>
+<tr>
+<td><label for="transaction_count">Transaction:</label></td>
+<td>
+<select id="transaction_count" name="total_transaction" style="width: 150px;">
+<option value="">-- Total --</option> 
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+<br>
+<input type="checkbox" id="send_mobile_check" name="send_mobile_check" value="mobile">
+<label for="send_mobile_check" style="font-weight: normal; padding-right: 0;">Send to Mobile Phone</label>
+<br>
+<input type="checkbox" id="send_email_check" name="send_email_check" value="email">
+<label for="send_email_check" style="font-weight: normal; padding-right: 0;">Send to Email</label>
+</td></tr>
+<tr>
+  <td><label for="send_email_input">Send to Email:</label></td>
+  <td><input type="text" id="send_email_input" name="send_to_email"></td></tr>
+<tr>
+<td><label for="send_mobile_input">Send to Mobile Phone:</label></td>
+<td><input type="text" id="send_mobile_input" name="send_to_mobile"></td></tr>
+</tbody>
+</table>
+
+<div class="button-container">
+<a href="Form-Hasil-Barang.html" class="generate-button" role="button">
+Generate Nabr Link</a>
+</div>
+
+</form>
+</body>
+</html>
